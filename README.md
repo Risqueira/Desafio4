@@ -242,3 +242,46 @@ public class VerificandoTriang {
     }
 }
 ```
+# Questao 6
+```java
+package verificandotrapezio;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ * Verificando um trapézio: Faça um programa que calcule e mostre a área de um
+ * trapézio. Sabe-se que:  A = ((basemaior + basemenor) * altura) / 2 Lembre-se
+ * a base maior e a base menor devem ser números maiores que zero.
+ *
+ * @author aluno.saolucas
+ */
+public class VerificandoTrapezio {
+
+    public static void main(String[] args) {
+
+        double baseMaior, baseMenor, altura, area;
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+
+        System.out.println("Digite o valor da base maior:");
+        baseMaior = ler.nextDouble();
+        System.out.println("Digite o valor da base menor:");
+        baseMenor = ler.nextDouble();
+        System.out.println("Digite o valor da altura:");
+        altura = ler.nextDouble();
+
+        if (baseMaior == 0 && baseMenor == 0) {
+            System.out.println("Valores das bases invalidos");
+        } else {
+            area = ((baseMaior + baseMenor) * altura) / 2;
+            System.out.println("A area do trapézio é de:" + decimal.format(area));
+        }
+    }
+
+}
+```
+# Questao 7
+```java
+
+```
