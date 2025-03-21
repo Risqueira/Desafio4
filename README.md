@@ -43,3 +43,40 @@ public class Nadadores {
     
 }
 ```
+Questao 2
+```java
+package descontoproduto;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ * Desconto em Produto: Se um produto custa mais de 100 reais, dê um desconto de
+ * 15%. Se custar menos, dê um desconto de 5%. Informe o valor final do produto.
+ *
+ * @author Henrique
+ */
+public class DescontoProduto {
+
+    public static void main(String[] args) {
+
+        double valorProd, custoTotal;
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+
+        System.out.println("Informe o preço do produto:");
+        valorProd = ler.nextDouble();
+
+        if (valorProd >0 && valorProd<=100) {
+            custoTotal = valorProd-(valorProd * 0.05);
+            System.out.println("valor do produto com desconto de 5%:" +"R$"+ decimal.format(custoTotal));
+        }else if(valorProd>100){
+            custoTotal = valorProd*0.85;
+            System.out.println("Valor do produto com desconto de 15%:"+"R$"+decimal.format(custoTotal));
+        }else{
+            System.out.println("Valor Invalido");
+        }
+
+    }
+}
+```
