@@ -1,6 +1,6 @@
 # Desafio4
 
-#Questao4
+# Questao4
 ```java
 package nadadores;
 
@@ -44,7 +44,7 @@ public class Nadadores {
     
 }
 ```
-Questao 2
+# Questao 2
 ```java
 package descontoproduto;
 
@@ -78,6 +78,83 @@ public class DescontoProduto {
             System.out.println("Valor Invalido");
         }
 
+    }
+}
+```
+# Questao 3
+```java
+package saudacaohorario;
+
+import java.util.Scanner;
+
+/**
+ * Saudação conforme o horário: Dado a hora do dia (um número de 0 a 23),
+ * cumprimente o usuário com "Bom dia!", "Boa tarde!" ou "Boa noite!"; conforme
+ * o horário.
+ *
+ * @author Henrique
+ */
+public class SaudacaoHorario {
+
+    public static void main(String[] args) {
+
+        int numero;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero de 0 a 23");
+        numero = ler.nextInt();
+
+        if (numero == 0) {
+            System.out.println("Bom dia!");
+        } else if (numero == 1) {
+            System.out.println("Bom dia!");
+        } else if (numero == 2) {
+            System.out.println("Bom dia!");
+        } else if (numero == 3) {
+            System.out.println("Bom dia!");
+        } else if (numero == 4) {
+            System.out.println("Bom dia!");
+        } else if (numero == 5) {
+            System.out.println("Bom dia!");
+        } else if (numero == 6) {
+            System.out.println("Bom dia!");
+        } else if (numero == 7) {
+            System.out.println("Bom dia!");
+        } else if (numero == 8) {
+            System.out.println("Bom dia!");
+        } else if (numero == 9) {
+            System.out.println("Bom dia!");
+        } else if (numero == 10) {
+            System.out.println("Bom dia!");
+        } else if (numero == 11) {
+            System.out.println("Bom dia!");
+        } else if (numero == 12) {
+            System.out.println("Boa dia!");
+        } else if (numero == 13) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 14) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 15) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 16) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 17) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 18) {
+            System.out.println("Boa tarde!");
+        } else if (numero == 19) {
+            System.out.println("Boa noite!");
+        } else if (numero == 20) {
+            System.out.println("Boa noite!");
+        } else if (numero == 21) {
+            System.out.println("Boa noite!");
+        } else if (numero == 22) {
+            System.out.println("Boa noite!");
+        } else if (numero == 23) {
+            System.out.println("Boa noite!");
+        } else {
+            System.out.println("Numero Invalido");
+        }
     }
 }
 ```
