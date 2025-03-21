@@ -197,3 +197,48 @@ public class FaixaDeNota {
     }
 }
 ```
+# Questao 5 
+```java
+package verificandotriang;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ * Verificando um Triangulo: Dados três valores, A, B, C, verificar se eles
+ * podem ser valores dos lados de um triângulo e, se forem, se é um triângulo
+ * escaleno, equilátero ou isóscele, considerando os seguintes conceitos: O
+ * comprimento de cada lado de um triângulo é menor do que a soma dos outros
+ * dois lados.  Chama-se equilátero o triângulo que tem três lados iguais.
+ * Denominam-se isósceles o triângulo que tem o comprimento de dois lados
+ * iguais.  Recebe o nome de escaleno o triângulo que tem os três lados
+ * diferentes
+ *
+ * @author Henrique
+ */
+public class VerificandoTriang {
+
+    public static void main(String[] args) {
+
+        double a, b, c;
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+
+        System.out.println("Digite o valor de A:");
+        a = ler.nextDouble();
+        System.out.println("Digite o valor de B:");
+        b = ler.nextDouble();
+        System.out.println("Digite o valor de C:");
+        c = ler.nextDouble();
+
+        if (a == b && a == c) {
+            System.out.println("O Triângulo é Equiláero");
+        } else if (a == b || a == c || b == c) {
+            System.out.println("O Triângulo é Isóceles");
+        } else if (a != b && a != c) {
+            System.out.println("O Triângulo é Escaleno");
+        }
+
+    }
+}
+```
