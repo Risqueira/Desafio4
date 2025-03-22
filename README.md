@@ -281,6 +281,56 @@ public class VerificandoTrapezio {
 
 }
 ```
+Questao 7
+```java
+package bhaskara;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ * Resolvendo a Fórmula de Bhaskara: Faça um programa que calcule as raízes da
+ * equação quadrática ax2+bx+c=0ax^2 + bx + c = 0ax2+bx+c=0. Sabe-se que:
+ *
+ * Lembre-se de que o valor de A deve ser diferente de zero e verifique o valor
+ * de Delta Δ é maior que zero, para determinar se a equação tem duas raízes
+ * reais, uma raiz real ou nenhuma raiz real.
+ *
+ * @author Henrique
+ */
+public class Bhaskara {
+
+    public static void main(String[] args) {
+
+        Double a2, b, c, delta, x1, x2, x;
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+
+        System.out.println("Digite o valor de A:");
+        a2 = ler.nextDouble();
+        System.out.println("Digite o valor de B:");
+        b = ler.nextDouble();
+        System.out.println("Digite o valor de C:");
+        c = ler.nextDouble();
+
+        delta = Math.pow(b, 2) - 4 * a2 * c;
+
+        if (a2 != 0 && delta > 0) {
+
+            x1 = (-b + Math.sqrt(delta)) / (2 * a2);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a2);
+            System.out.println("Duas raizes real x1:" + decimal.format(x1) + " " + "x2:" + decimal.format(x2));
+        } else if (delta == 0) {
+            x = -b / (2 * a2);
+            System.out.println("Uma raiz real:" + decimal.format(x));
+        } else {
+            System.out.println("Valor invalido");
+        }
+
+    }
+
+}
+```
 # Questao 7
 ```java
 
