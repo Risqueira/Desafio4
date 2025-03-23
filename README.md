@@ -15,7 +15,7 @@ Juvenil A: 11-13 anos
 Juvenil B: 14-17 anos
 Adulto: maiores de 18 anos
  * @author Henrique
- * 
+ /*
 
 public class Nadadores {
 
