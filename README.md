@@ -380,7 +380,137 @@ public class DiasDaSemana {
 
 }
 ```
-# Questao 7
+# Questao 9
 ```java
+package mesesdoano;
 
+import java.util.Scanner;
+
+/**
+ * Meses do Ano: Escreva um programa que leia um inteiro entre 1 e 12 e imprima
+ * o mês correspondente a este numero. Isto é, janeiro se 1, fevereiro se 2, e
+ * assim por diante.
+ *
+ * @author henrique
+ */
+public class MesesDoAno {
+
+    public static void main(String[] args) {
+
+        int num;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero de 1 a 12:");
+        num = ler.nextInt();
+
+        switch (num) {
+            case 1:
+                System.out.println("Janeiro");
+                break;
+            case 2:
+                System.out.println("Feveiro");
+                break;
+            case 3:
+                System.out.println("Março");
+                break;
+            case 4:
+                System.out.println("Abril");
+                break;
+            case 5:
+                System.out.println("Maio");
+                break;
+            case 6:
+                System.out.println("Junho");
+                break;
+            case 7:
+                System.out.println("Julho");
+                break;
+            case 8:
+                System.out.println("Agosto");
+                break;
+            case 9:
+                System.out.println("Setembro");
+                break;
+            case 10:
+                System.out.println("Outubro");
+                break;
+            case 11:
+                System.out.println("Novembro");
+                break;
+            case 12:
+                System.out.println("Dezembro");
+                break;
+            default:
+                System.out.println("INVALIDO");
+                break;
+        }
+    }
+
+}
+```
+# Questao 10
+```java
+package estacoesanohs;
+
+import java.util.Scanner;
+
+/**
+ * Estação do Ano: Dado um mês representado por um número (1 para
+Janeiro, 12 para Dezembro), informe a estação do ano correspondente
+no hemisfério sul.
+ * @author henrique
+ */
+public class EstacoesAnoHS {
+
+    public static void main(String[] args) {
+        int num;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero de 1 a 12:");
+        num = ler.nextInt();
+
+        switch (num) {
+            case 1:
+                System.out.println("Verão");
+                break;
+            case 2:
+                System.out.println("Verão");
+                break;
+            case 3:
+                System.out.println("Outono");
+                break;
+            case 4:
+                System.out.println("Outono");
+                break;
+            case 5:
+                System.out.println("Outono");
+                break;
+            case 6:
+                System.out.println("Inverno");
+                break;
+            case 7:
+                System.out.println("Inverno");
+                break;
+            case 8:
+                System.out.println("Inverno");
+                break;
+            case 9:
+                System.out.println("Primavera");
+                break;
+            case 10:
+                System.out.println("Primavera");
+                break;
+            case 11:
+                System.out.println("Primavera");
+                break;
+            case 12:
+                System.out.println("Verão");
+                break;
+            default:
+                System.out.println("INVALIDO");
+                break;
+        }
+    }
+    
+}
 ```
