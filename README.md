@@ -232,7 +232,7 @@ public class VerificandoTriang {
         c = ler.nextDouble();
 
         if (a == b && a == c) {
-            System.out.println("O Triângulo é Equiláero");
+            System.out.println("O Triângulo é Equilátero");
         } else if (a == b || a == c || b == c) {
             System.out.println("O Triângulo é Isóceles");
         } else if (a != b && a != c) {
