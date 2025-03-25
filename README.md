@@ -281,7 +281,7 @@ public class VerificandoTrapezio {
 
 }
 ```
-Questao 7
+# Questao 7
 ```java
 package bhaskara;
 
